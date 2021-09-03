@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ru.pink.ponies.domain.ShopRepository;
 import ru.pink.ponies.web.dto.Good;
@@ -19,7 +20,8 @@ import java.util.List;
 import java.util.UUID;
 
 @Slf4j
-@RestController("/mock/metrics")
+@RestController
+@RequestMapping("/mock/metrics")
 @RequiredArgsConstructor
 public class ShopController {
     private final ShopRepository shopRepository;

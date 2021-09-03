@@ -11,6 +11,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
-        generate_statistics: true
+        generate_statistics: false
   liquibase:
     enabled: false

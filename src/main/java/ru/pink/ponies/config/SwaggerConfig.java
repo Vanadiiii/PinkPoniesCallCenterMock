@@ -18,7 +18,6 @@ import java.util.Collections;
 @EnableSwagger2
 @RequiredArgsConstructor
 public class SwaggerConfig {
-
     @Bean
     public Docket swagger() {
         Contact contact = new Contact("Call-center-shop", "https://your-url.ru", "vanadiiii42@gmail.com");
