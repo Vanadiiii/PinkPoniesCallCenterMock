@@ -23,8 +23,8 @@ import java.util.UUID;
 public class MetricController {
     private final MetricRepository metricRepository;
 
-    @GetMapping("/{goodId}")
-    public ResponseEntity<Metric> getMetricById(@PathVariable("goodId") UUID metricId) {
+    @GetMapping("/{metricId}")
+    public ResponseEntity<Metric> getMetricById(@PathVariable("metricId") UUID metricId) {
         return metricRepository.findById(metricId)
                 .map(ResponseEntity::ok)
                 .orElseThrow();
